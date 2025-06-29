@@ -17,7 +17,6 @@
     padding: 10px;
     position: relative;
     margin-block-end: 40px;
-    background: var(--background-image) no-repeat center/cover fixed;;
 }
 
 .header__theme-menu {
@@ -211,11 +210,7 @@
     text-shadow: 2px 2px 0 var(--accent-color);
 }
 
-<<<<<<< HEAD
-@media (width >=768px) {
-=======
 @media (width >= 768px) {
->>>>>>> 44c35cf2ecde5a9aaf76567c960d28aad1a08ce0
     .header {
         min-height: 1024px;
         grid-template-columns: 1fr 1fr;
@@ -380,12 +375,8 @@
         background-color: var(--second-color);
         min-height: 768px;
     }
-<<<<<<< HEAD
-}
-=======
-
+    
     .footer__title {
         font-size: 157px;
     }
 }
->>>>>>> 44c35cf2ecde5a9aaf76567c960d28aad1a08ce0
