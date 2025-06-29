@@ -1,26 +1,19 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-dark {
-    /* сохраните этот селектор в приведённом виде.
-      Так стили написанные ниже будут иметь больший вес,
-      чем стили в медиазапросе предпочтений пользователя
-    */
     --main-color: #F1B2CE;
     --second-color: #000028;
     --hover-color: #db00ff;
     --accent-color: #ff0070;
+    --background-image: url(../images/cover-image-dark.png);
+    --hover-border: rgba(255, 0, 112, 0.4);
 }
 
 .theme-dark .page {
-    /* Вам также нужно будет написать ряд подобных селекторов */
-    /*.main,*/
-    /*.cards,*/
-    /*.footer {*/
-    /*    background-color: var(--second-color);*/
-    /*}*/
-    background: var(--background-image-dark) no-repeat center/cover fixed;
+    .title-decor {
+        background: var(--accent-color);
+        color: var(--main-color);
+    }
+
+    .content__title {
+        color: var(--main-color);
+    }
 }

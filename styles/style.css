@@ -3,8 +3,9 @@
     font-size: var(--font-size);
     font-weight: var(--font-weight);
     color: var(--main-color);
-    background: var(--background-image-dark) no-repeat center/cover fixed;
+    background: var(--background-image) no-repeat center/cover fixed;
     line-height: var(--line-height);
+    background-color: var(--second-color);
 }
 
 .header {
@@ -16,11 +17,12 @@
     padding: 10px;
     position: relative;
     margin-block-end: 40px;
+    background: var(--background-image) no-repeat center/cover fixed;;
 }
 
 .header__theme-menu {
     justify-self: flex-end;
-    margin-block-start: 66px;
+    margin-block-start: 62px;
     margin-block-end: 72px;
 }
 
@@ -29,35 +31,35 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
 .header__theme-menu-button {
     color: var(--accent-color);
     background: transparent;
     border: none;
+    text-transform: lowercase;
+    padding: 0 13px;
 }
 
-.header__theme-menu-button:hover {
-    border: 1px solid rgba(255, 0, 112, 0.4);
-    padding: 0 25px;
+.header__theme-menu-button:hover,
+.card__description a:hover {
+    border: 1px solid var(--hover-border);
     cursor: pointer;
 }
 
 .header__theme-menu-button:focus,
-.card__description  a {
+.card__description a:focus {
     outline: none;
 }
 
 .header__theme-menu-button:focus-visible,
-.card__description a {
-    border-block-end: 1px solid var(--hover-color);
-    text-decoration: none;
+.card__description a:focus-visible {
+    border-block-end: 1px solid var(--accent-color);
 }
 
 .header__theme-menu-button_active {
     border: 1px solid var(--accent-color);
-    padding: 1px 13px;
     pointer-events: none;
 }
 
@@ -126,7 +128,6 @@
 
 .main {
     display: grid;
-    background-color: var(--second-color);
 }
 
 .content {
@@ -143,7 +144,6 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: var(--second-color);
 }
 
 .title-decor {
@@ -167,18 +167,16 @@
 }
 
 .content__subtitle {
-    font-size: var(--font-size);
-    line-height: var(--line-height);
-    color: var(--second-color);
+    margin-block-end: 0;
 }
 
 .card__subtitle {
     font-weight: var(--font-weight);
-    margin-block-end: 10px;
 }
 
 .card__description  a {
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
+    text-shadow: 2px 2px var(--accent-color);
+    text-decoration: none;
 }
 
 .card__images {
@@ -206,7 +204,7 @@
 
 .footer__title {
     font-weight: var(--font-weight-bold);
-    font-size: 116px;
+    font-size: clamp(7.25rem, 5.42rem + 4.881vw, 9.813rem);
     line-height: 83%;
     color: var(--hover-color);
     text-decoration: none;
@@ -350,7 +348,6 @@
 
     .header__title {
         margin-inline-start: -15px;
-        font-size: 157px;
     }
 
     .header__description {
@@ -378,9 +375,5 @@
     .footer {
         background-color: var(--second-color);
         min-height: 768px;
-    }
-
-    .footer__title {
-        font-size: 157px;
     }
 }

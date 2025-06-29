@@ -1,45 +1,72 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
-    /* сохраните этот селектор в приведённом виде.
-      Так стили написанные ниже будут иметь больший вес,
-      чем стили в медиазапросе предпочтений пользователя
-    */
     --main-color: #353430;
-    --second-color: #FF8DCB;
-    --hover-color: #ffC2E6;
+    --second-color:  #FF8DCB;;
+    --hover-color:#ffC2E6;
     --accent-color: #ff0070;
-
-    .page {
-        background: var(--background-image-light) no-repeat center/cover fixed;
-    }
+    --background-image: url(../images/cover-image-light.png);
+    --hover-border: rgba(50, 49, 45, 0.4);
 }
 
 @media (prefers-color-scheme: light) {
     :root {
-        /* Дублируем только те же переменные, что и выше */
         --main-color: #353430;
         --second-color: #FF8DCB;
         --hover-color: #ffC2E6;
         --accent-color: #ff0070;
-    }
-    .page {
-        background: var(--background-image-light) no-repeat center/cover fixed;
+        --background-image: url(../images/cover-image-light.png);
     }
 
+    .page {
+        background-color: transparent;
+        background: var(--background-image) no-repeat center/cover fixed;
+    }
+
+    .decorated-zone::before {
+        border-inline-end: 1px solid var(--main-color);
+        border-block-start: 1px solid var(--main-color);
+    }
+
+    .decorated-zone::after {
+        border-inline-start: 1px solid var(--main-color);
+        border-block-end: 1px solid var(--main-color);
+    }
+
+    .decoration-element {
+        display: none;
+    }
+
+    .title-decor {
+        background: var(--second-color);
+        color: var(--main-color);
+    }
+
+    .content__title {
+        color: var(--main-color);
+    }
 }
 
-
 .theme-light .page {
-    /* Вам также нужно будет написать ряд подобных селекторов */
+        .decorated-zone::before {
+            border-inline-end: 1px solid var(--main-color);
+            border-block-start: 1px solid var(--main-color);
+        }
 
-        /* Остальные стили, только при необходимости */
-        .page {
-            background: var(--background-image-light) no-repeat center/cover fixed;
+        .decorated-zone::after {
+            border-inline-start: 1px solid var(--main-color);
+            border-block-end: 1px solid var(--main-color);
+        }
+
+        .header__theme-menu-button {
+            color: var(--main-color);
+        }
+
+        .header__theme-menu-button_active {
+            border-color: var(--main-color);
+        }
+
+        .header__theme-menu-button:focus-visible,
+        .card__description a:focus-visible {
+            border-block-end: 1px solid var(--main-color);
         }
 
         .title-decor {
@@ -53,20 +80,5 @@
 
         .decoration-element {
             display: none;
-        }
-
-        .decoration-element::after,
-        .decoration-element::before {
-            border-color: var(--second-color);
-        }
-
-        .header__theme-menu-button:hover {
-            border: 1px solid rgba(50, 49, 45, 0.4);
-        }
-
-        .main,
-        .cards,
-        .footer {
-            background-color: transparent;
         }
     }
