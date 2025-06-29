@@ -5,6 +5,10 @@
     --accent-color: #ff0070;
     --background-image: url(../images/cover-image-dark.png);
     --hover-border: rgba(255, 0, 112, 0.4);
+    .main,
+    .footer {
+        background: var(--second-color);
+    }
 }
 
 .theme-dark .page {
