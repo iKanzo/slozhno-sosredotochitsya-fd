@@ -5,12 +5,68 @@
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+    /* сохраните этот селектор в приведённом виде.
+      Так стили написанные ниже будут иметь больший вес,
+      чем стили в медиазапросе предпочтений пользователя
+    */
+    --main-color: #353430;
+    --second-color: #FF8DCB;
+    --hover-color: #ffC2E6;
+    --accent-color: #ff0070;
+
+    .page {
+        background: var(--background-image-light) no-repeat center/cover fixed;
+    }
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+@media (prefers-color-scheme: light) {
+    :root {
+        /* Дублируем только те же переменные, что и выше */
+        --main-color: #353430;
+        --second-color: #FF8DCB;
+        --hover-color: #ffC2E6;
+        --accent-color: #ff0070;
+    }
+    .page {
+        background: var(--background-image-light) no-repeat center/cover fixed;
+    }
+
 }
+
+
+.theme-light .page {
+    /* Вам также нужно будет написать ряд подобных селекторов */
+
+        /* Остальные стили, только при необходимости */
+        .page {
+            background: var(--background-image-light) no-repeat center/cover fixed;
+        }
+
+        .title-decor {
+            background: var(--second-color);
+            color: var(--main-color);
+        }
+
+        .content__title {
+            color: var(--main-color);
+        }
+
+        .decoration-element {
+            display: none;
+        }
+
+        .decoration-element::after,
+        .decoration-element::before {
+            border-color: var(--second-color);
+        }
+
+        .header__theme-menu-button:hover {
+            border: 1px solid rgba(50, 49, 45, 0.4);
+        }
+
+        .main,
+        .cards,
+        .footer {
+            background-color: transparent;
+        }
+    }
