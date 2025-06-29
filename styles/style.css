@@ -45,12 +45,12 @@
 }
 
 .header__theme-menu-button:focus,
-.card__description  a{
+.card__description  a {
     outline: none;
 }
 
 .header__theme-menu-button:focus-visible,
-.card__description  a  {
+.card__description a {
     border-bottom: 1px solid var(--hover-color);
     text-decoration: none;
 }
@@ -170,7 +170,6 @@
     font-size: var(--font-size);
     line-height: 130%;
     color: var(--second-color);
-    margin-block-end: 20px;
 }
 
 .card__subtitle {
