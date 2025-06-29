@@ -15,10 +15,10 @@
 
     .title-decor {
         background: var(--accent-color);
-        color: var(--main-color);
+        color: var(--second-color);
     }
 
     .content__title {
-        color: var(--main-color);
+        color: var(--accent-color);
     }
 }
