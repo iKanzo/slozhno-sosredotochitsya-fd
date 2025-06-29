@@ -8,7 +8,7 @@
 }
 
 .header {
-    height: 100vh;
+    block-size: 100vh;
     min-height: 668px;
     display: grid;
     grid-template-rows: min-content;
@@ -51,7 +51,7 @@
 
 .header__theme-menu-button:focus-visible,
 .card__description a {
-    border-bottom: 1px solid var(--hover-color);
+    border-block-end: 1px solid var(--hover-color);
     text-decoration: none;
 }
 
@@ -78,8 +78,8 @@
 .decoration-element::after {
     content: "";
     display: block;
-    width: 9px;
-    height: 9px;
+    inline-size: 9px;
+    block-size: 9px;
     border-radius: 50%;
     background-color: var(--accent-color);
     margin-inline-start: 7px;
@@ -88,8 +88,8 @@
 .decorated-zone::before {
     content: "";
     display: block;
-    width: 25px;
-    height: 25px;
+    inline-size: 25px;
+    block-size: 25px;
     border-inline-end: 1px solid var(--accent-color);
     border-block-start: 1px solid var(--accent-color);
     position: absolute;
@@ -100,8 +100,8 @@
 .decorated-zone::after {
     content: "";
     display: block;
-    width: 25px;
-    height: 25px;
+    inline-size: 25px;
+    block-size: 25px;
     border-inline-start: 1px solid var(--accent-color);
     border-block-end: 1px solid var(--accent-color);
     position: absolute;
@@ -115,7 +115,7 @@
     line-height: 83%;
     color: var(--hover-color);
     text-shadow: 4px 4px 0 var(--accent-color);
-    margin-bottom: 5px;
+    margin-block-end: 5px;
 }
 
 .header__description {
@@ -168,7 +168,7 @@
 
 .content__subtitle {
     font-size: var(--font-size);
-    line-height: 130%;
+    line-height: var(--line-height);
     color: var(--second-color);
 }
 
@@ -190,13 +190,13 @@
 
 .card__image {
     display: block;
-    width: 100%;
+    inline-size: 100%;
     object-fit: cover;
     object-position: center;
 }
 
 .footer {
-    height: 100vh;
+    block-size: 100vh;
     min-height: 668px;
     display: grid;
     justify-content: center;
