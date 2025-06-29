@@ -17,7 +17,10 @@
     padding: 10px;
     position: relative;
     margin-block-end: 40px;
+<<<<<<< HEAD
     /*background: var(--background-image) no-repeat center/cover;*/
+=======
+>>>>>>> 737a69930ac336fadc04612a1173b73d8ed4496c
 }
 
 .header__theme-menu {
@@ -378,7 +381,11 @@
         background-color: var(--second-color);
         min-height: 768px;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 737a69930ac336fadc04612a1173b73d8ed4496c
     .footer__title {
         font-size: 157px;
     }
