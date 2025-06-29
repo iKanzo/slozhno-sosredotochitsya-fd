@@ -8,6 +8,7 @@
 }
 
 .theme-dark .page {
+
     .title-decor {
         background: var(--accent-color);
         color: var(--main-color);

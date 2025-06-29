@@ -21,6 +21,11 @@
         background: var(--background-image) no-repeat center/cover fixed;
     }
 
+    .main,
+    .footer {
+        background: transparent;
+    }
+
     .decorated-zone::before {
         border-inline-end: 1px solid var(--main-color);
         border-block-start: 1px solid var(--main-color);
@@ -46,7 +51,13 @@
 }
 
 .theme-light .page {
-        .decorated-zone::before {
+        .main,
+        .footer {
+            background: transparent;
+        }
+
+
+    .decorated-zone::before {
             border-inline-end: 1px solid var(--main-color);
             border-block-start: 1px solid var(--main-color);
         }
