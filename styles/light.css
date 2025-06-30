@@ -28,15 +28,6 @@
     .header__theme-menu-button:focus-visible {
         border-block-end: 1px solid var(--main-color);
     }
-
-    .title-decor {
-        background: var(--second-color);
-        color: var(--main-color);
-    }
-
-    .content__title {
-        color: var(--main-color);
-    }
 }
 
 .theme-light .page {
@@ -56,6 +47,15 @@
 
         .decoration-element {
             display: none;
+        }
+
+        .title-decor {
+            background: var(--second-color);
+            color: var(--main-color);
+        }
+
+        .content__title {
+            color: var(--main-color);
         }
 
         .card__description  a {
