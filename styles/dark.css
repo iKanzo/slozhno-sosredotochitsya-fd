@@ -5,23 +5,14 @@
     --accent-color: #ff0070;
     --background-image: url(../images/cover-image-dark.png);
     --hover-border: rgba(255, 0, 112, 0.4);
-<<<<<<< HEAD
 
     .decoration-element {
         display: flex;
-=======
-    .main,
-    .footer {
-        background: var(--second-color);
->>>>>>> c838bd0f4e9d45df7f288d51ce0b4e63fc1dd1cf
     }
+
 }
 
 .theme-dark .page {
-<<<<<<< HEAD
-}
-=======
-
     .title-decor {
         background: var(--accent-color);
         color: var(--second-color);
@@ -31,4 +22,3 @@
         color: var(--accent-color);
     }
 }
->>>>>>> c838bd0f4e9d45df7f288d51ce0b4e63fc1dd1cf
