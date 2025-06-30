@@ -13,12 +13,4 @@
 }
 
 .theme-dark .page {
-    .title-decor {
-        background: var(--accent-color);
-        color: var(--second-color);
-    }
-
-    .content__title {
-        color: var(--accent-color);
-    }
 }
