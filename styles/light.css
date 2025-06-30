@@ -30,13 +30,13 @@
     }
 
     .title-decor {
-            background: var(--second-color);
-            color: var(--main-color);
-        }
+        background: var(--second-color);
+        color: var(--main-color);
+    }
 
-        .content__title {
-            color: var(--main-color);
-        }
+    .content__title {
+        color: var(--main-color);
+    }
 }
 
 .theme-light .page {
