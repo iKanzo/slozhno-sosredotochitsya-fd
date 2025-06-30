@@ -28,6 +28,15 @@
     .header__theme-menu-button:focus-visible {
         border-block-end: 1px solid var(--main-color);
     }
+
+    .title-decor {
+            background: var(--second-color);
+            color: var(--main-color);
+        }
+
+        .content__title {
+            color: var(--main-color);
+        }
 }
 
 .theme-light .page {
@@ -43,15 +52,6 @@
         .decorated-zone::after {
             border-inline-start: 1px solid var(--main-color);
             border-block-end: 1px solid var(--main-color);
-        }
-
-        .title-decor {
-            background: var(--second-color);
-            color: var(--main-color);
-        }
-
-        .content__title {
-            color: var(--main-color);
         }
 
         .decoration-element {
