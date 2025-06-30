@@ -3,9 +3,10 @@
     font-size: var(--font-size);
     font-weight: var(--font-weight);
     color: var(--main-color);
-    background: var(--background-image) no-repeat center/cover fixed;
-    line-height: var(--line-height);
+    background: var(--background-image) no-repeat center/cover;
+    background-attachment: fixed;
     background-color: var(--second-color);
+    line-height: var(--line-height);
 }
 
 .header {
@@ -17,10 +18,6 @@
     padding: 10px;
     position: relative;
     margin-block-end: 40px;
-<<<<<<< HEAD
-    /*background: var(--background-image) no-repeat center/cover;*/
-=======
->>>>>>> 737a69930ac336fadc04612a1173b73d8ed4496c
 }
 
 .header__theme-menu {
@@ -45,8 +42,7 @@
     padding: 0 13px;
 }
 
-.header__theme-menu-button:hover,
-.card__description a:hover {
+.header__theme-menu-button:hover {
     border: 1px solid var(--hover-border);
     cursor: pointer;
 }
@@ -56,8 +52,7 @@
     outline: none;
 }
 
-.header__theme-menu-button:focus-visible,
-.card__description a:focus-visible {
+.header__theme-menu-button:focus-visible {
     border-block-end: 1px solid var(--accent-color);
 }
 
@@ -131,7 +126,6 @@
 
 .main {
     display: grid;
-    background: var(--second-color);
 }
 
 .content {
@@ -183,6 +177,14 @@
     text-decoration: none;
 }
 
+.card__description  a:hover {
+    border-bottom: 1px solid var(--main-color);
+}
+
+.card__description a:focus-visible {
+    border: 1px solid var(--main-color);
+}
+
 .card__images {
     display: flex;
     flex-direction: column;
@@ -204,7 +206,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    background: var(--second-color);
 }
 
 .footer__title {
@@ -378,14 +379,9 @@
     }
 
     .footer {
-        background-color: var(--second-color);
         min-height: 768px;
     }
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> 737a69930ac336fadc04612a1173b73d8ed4496c
     .footer__title {
         font-size: 157px;
     }

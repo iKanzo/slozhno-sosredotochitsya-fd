@@ -14,69 +14,34 @@
         --hover-color: #ffC2E6;
         --accent-color: #ff0070;
         --background-image: url(../images/cover-image-light.png);
-    }
-
-    .page {
-        background-color: transparent;
-        background: var(--background-image) no-repeat center/cover fixed;
-    }
-
-    .main,
-    .footer {
-        background: transparent;
-    }
-
-    .decorated-zone::before {
-        border-inline-end: 1px solid var(--main-color);
-        border-block-start: 1px solid var(--main-color);
-    }
-
-    .decorated-zone::after {
-        border-inline-start: 1px solid var(--main-color);
-        border-block-end: 1px solid var(--main-color);
+        --hover-border: rgba(50, 49, 45, 0.4);
     }
 
     .decoration-element {
         display: none;
     }
 
-    .title-decor {
-        background: var(--second-color);
-        color: var(--main-color);
+    .header__theme-menu-button_active {
+        border-color: var(--main-color);
     }
 
-    .content__title {
-        color: var(--main-color);
+    .header__theme-menu-button:focus-visible {
+        border-block-end: 1px solid var(--main-color);
     }
 }
 
 .theme-light .page {
-        .main,
-        .footer {
-            background: transparent;
-        }
-
-
-    .decorated-zone::before {
-            border-inline-end: 1px solid var(--main-color);
-            border-block-start: 1px solid var(--main-color);
-        }
-
-        .decorated-zone::after {
-            border-inline-start: 1px solid var(--main-color);
-            border-block-end: 1px solid var(--main-color);
-        }
-
         .header__theme-menu-button {
             color: var(--main-color);
         }
 
-        .header__theme-menu-button_active {
-            border-color: var(--main-color);
-        }
+        .decorated-zone::before {
+                border-inline-end: 1px solid var(--main-color);
+                border-block-start: 1px solid var(--main-color);
+            }
 
-        .header__theme-menu-button:focus-visible,
-        .card__description a:focus-visible {
+        .decorated-zone::after {
+            border-inline-start: 1px solid var(--main-color);
             border-block-end: 1px solid var(--main-color);
         }
 
@@ -92,4 +57,8 @@
         .decoration-element {
             display: none;
         }
-    }
+
+        .card__description  a {
+            text-shadow: 2px 2px var(--second-color);
+        }
+}
