@@ -8,12 +8,10 @@
     --title-color: #353430;
     --title-background: #FF8DCB;
     --subtitle-color: #353430;
-<<<<<<< HEAD
     --button-color: #353430;
     --button-hover: #353430;
     --decorate-color: #353430;
-=======
->>>>>>> ed0b603a778beb28ffcf3bc0a02ef116b9a99b53
+    --link-shadow: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -24,18 +22,16 @@
         --accent-color: #ff0070;
         --background-image: url(../images/cover-image-light.png);
         --hover-border: rgba(50, 49, 45, 0.4);
-<<<<<<< HEAD
         --subtitle-color: #353430;
         --title-color: #353430;
         --title-background: #FF8DCB;
         --button-color: #353430;
         --button-hover: #353430;
         --decorate-color: #353430;
-=======
         --title-color: #353430;
         --title-background: #FF8DCB;
         --subtitle-color: #353430;
->>>>>>> ed0b603a778beb28ffcf3bc0a02ef116b9a99b53
+        --link-shadow: #353430;
     }
 
     .decoration-element {
@@ -44,24 +40,7 @@
 }
 
 .theme-light .page {
-        /*.decorated-zone::before {*/
-        /*        border-inline-end: 1px solid var(--main-color);*/
-        /*        border-block-start: 1px solid var(--main-color);*/
-        /*    }*/
-
-        /*.decorated-zone::after {*/
-        /*    border-inline-start: 1px solid var(--main-color);*/
-        /*    border-block-end: 1px solid var(--main-color);*/
-        /*}*/
-
         .decoration-element {
             display: none;
         }
-<<<<<<< HEAD
-=======
-
-        .card__description  a {
-            text-shadow: 2px 2px var(--second-color);
-        }
->>>>>>> ed0b603a778beb28ffcf3bc0a02ef116b9a99b53
 }
