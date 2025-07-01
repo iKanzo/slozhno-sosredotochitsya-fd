@@ -8,9 +8,12 @@
     --title-color: #353430;
     --title-background: #FF8DCB;
     --subtitle-color: #353430;
+<<<<<<< HEAD
     --button-color: #353430;
     --button-hover: #353430;
     --decorate-color: #353430;
+=======
+>>>>>>> ed0b603a778beb28ffcf3bc0a02ef116b9a99b53
 }
 
 @media (prefers-color-scheme: light) {
@@ -21,12 +24,18 @@
         --accent-color: #ff0070;
         --background-image: url(../images/cover-image-light.png);
         --hover-border: rgba(50, 49, 45, 0.4);
+<<<<<<< HEAD
         --subtitle-color: #353430;
         --title-color: #353430;
         --title-background: #FF8DCB;
         --button-color: #353430;
         --button-hover: #353430;
         --decorate-color: #353430;
+=======
+        --title-color: #353430;
+        --title-background: #FF8DCB;
+        --subtitle-color: #353430;
+>>>>>>> ed0b603a778beb28ffcf3bc0a02ef116b9a99b53
     }
 
     .decoration-element {
@@ -48,4 +57,11 @@
         .decoration-element {
             display: none;
         }
+<<<<<<< HEAD
+=======
+
+        .card__description  a {
+            text-shadow: 2px 2px var(--second-color);
+        }
+>>>>>>> ed0b603a778beb28ffcf3bc0a02ef116b9a99b53
 }
