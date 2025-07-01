@@ -173,16 +173,16 @@
 }
 
 .card__description  a {
-    text-shadow: 2px 2px var(--accent-color);
+    text-shadow: 2px 2px var(--link-shadow);
     text-decoration: none;
 }
 
 .card__description  a:hover {
-    border-bottom: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--link-shadow);
 }
 
 .card__description a:focus-visible {
-    border: 1px solid var(--main-color);
+    border: 1px solid var(--link-shadow);
 }
 
 .card__images {
