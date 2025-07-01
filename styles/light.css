@@ -5,6 +5,9 @@
     --accent-color: #ff0070;
     --background-image: url(../images/cover-image-light.png);
     --hover-border: rgba(50, 49, 45, 0.4);
+    --title-color: #353430;
+    --title-background: #FF8DCB;
+    --subtitle-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -15,6 +18,9 @@
         --accent-color: #ff0070;
         --background-image: url(../images/cover-image-light.png);
         --hover-border: rgba(50, 49, 45, 0.4);
+        --title-color: #353430;
+        --title-background: #FF8DCB;
+        --subtitle-color: #353430;
     }
 
     .decoration-element {
@@ -47,15 +53,6 @@
 
         .decoration-element {
             display: none;
-        }
-
-        .title-decor {
-            background: var(--second-color);
-            color: var(--main-color);
-        }
-
-        .content__title {
-            color: var(--main-color);
         }
 
         .card__description  a {
