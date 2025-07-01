@@ -35,7 +35,7 @@
 }
 
 .header__theme-menu-button {
-    color: var(--accent-color);
+    color: var(--button-color);
     background: transparent;
     border: none;
     text-transform: lowercase;
@@ -53,11 +53,11 @@
 }
 
 .header__theme-menu-button:focus-visible {
-    border-block-end: 1px solid var(--accent-color);
+    border-block-end: 1px solid var(--button-hover);
 }
 
 .header__theme-menu-button_active {
-    border: 1px solid var(--accent-color);
+    border: 1px solid var(--button-hover);
     pointer-events: none;
 }
 
@@ -90,8 +90,8 @@
     display: block;
     inline-size: 25px;
     block-size: 25px;
-    border-inline-end: 1px solid var(--accent-color);
-    border-block-start: 1px solid var(--accent-color);
+    border-inline-end: 1px solid var(--decorate-color);
+    border-block-start: 1px solid var(--decorate-color);
     position: absolute;
     right: 10px;
     top: 10px;
@@ -102,8 +102,8 @@
     display: block;
     inline-size: 25px;
     block-size: 25px;
-    border-inline-start: 1px solid var(--accent-color);
-    border-block-end: 1px solid var(--accent-color);
+    border-inline-start: 1px solid var(--decorate-color);
+    border-block-end: 1px solid var(--decorate-color);
     position: absolute;
     left: 10px;
     bottom: 10px;
@@ -145,15 +145,15 @@
 }
 
 .title-decor {
-    background-color:  var(--accent-color);
-    color: var(--second-color);
+    background-color:  var(--title-background);
+    color: var(--title-color);
 }
 
 .content__title {
     font-size: var(--font-size);
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height);
-    color: var(--accent-color);
+    color: var(--subtitle-color);
     margin-block-end: 20px;
 }
 

@@ -5,6 +5,12 @@
     --accent-color: #ff0070;
     --background-image: url(../images/cover-image-light.png);
     --hover-border: rgba(50, 49, 45, 0.4);
+    --title-color: #353430;
+    --title-background: #FF8DCB;
+    --subtitle-color: #353430;
+    --button-color: #353430;
+    --button-hover: #353430;
+    --decorate-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -15,50 +21,31 @@
         --accent-color: #ff0070;
         --background-image: url(../images/cover-image-light.png);
         --hover-border: rgba(50, 49, 45, 0.4);
+        --subtitle-color: #353430;
+        --title-color: #353430;
+        --title-background: #FF8DCB;
+        --button-color: #353430;
+        --button-hover: #353430;
+        --decorate-color: #353430;
     }
 
     .decoration-element {
         display: none;
     }
-
-    .header__theme-menu-button_active {
-        border-color: var(--main-color);
-    }
-
-    .header__theme-menu-button:focus-visible {
-        border-block-end: 1px solid var(--main-color);
-    }
 }
 
 .theme-light .page {
-        .header__theme-menu-button {
-            color: var(--main-color);
-        }
+        /*.decorated-zone::before {*/
+        /*        border-inline-end: 1px solid var(--main-color);*/
+        /*        border-block-start: 1px solid var(--main-color);*/
+        /*    }*/
 
-        .decorated-zone::before {
-                border-inline-end: 1px solid var(--main-color);
-                border-block-start: 1px solid var(--main-color);
-            }
-
-        .decorated-zone::after {
-            border-inline-start: 1px solid var(--main-color);
-            border-block-end: 1px solid var(--main-color);
-        }
+        /*.decorated-zone::after {*/
+        /*    border-inline-start: 1px solid var(--main-color);*/
+        /*    border-block-end: 1px solid var(--main-color);*/
+        /*}*/
 
         .decoration-element {
             display: none;
-        }
-
-        .title-decor {
-            background: var(--second-color);
-            color: var(--main-color);
-        }
-
-        .content__title {
-            color: var(--main-color);
-        }
-
-        .card__description  a {
-            text-shadow: 2px 2px var(--second-color);
         }
 }
