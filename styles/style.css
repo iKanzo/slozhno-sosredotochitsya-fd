@@ -145,15 +145,15 @@
 }
 
 .title-decor {
-    background-color:  var(--accent-color);
-    color: var(--second-color);
+    background-color:  var(--title-background);
+    color: var(--title-color);
 }
 
 .content__title {
     font-size: var(--font-size);
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height);
-    color: var(--accent-color);
+    color: var(--subtitle-color);
     margin-block-end: 20px;
 }
 
